@@ -1,6 +1,6 @@
 # ***🔐 Password Generator***
 
-A simple and secure password generator built to help users create strong, customizable passwords for improved security.
+A simple and secure password generator built to help users create strong passwords for improved security.
 
 ## ***🚀 Features***
 <p align="left">
@@ -11,6 +11,12 @@ A simple and secure password generator built to help users create strong, custom
     <li>Lowercase letters</li>
     <li>Special characters</li>
   </ul>
+  And some commodities, like:
+  <br><br>
+  <ul>
+    <li>Dark/Light mode</li>
+    <li>Copy to clipboard</li>
+  </ul>  
 </p>
 
 ## ***🖥️ Languages & Tools used***
