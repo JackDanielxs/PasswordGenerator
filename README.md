@@ -20,3 +20,17 @@ A simple and secure password generator built to help users create strong, custom
     <img src="https://skillicons.dev/icons?i=py,html,css,js" />
   </a>
 </p>
+
+## ***▶️ How to run***
+<li>Make sure Flask is installed:</li>
+<br>
+
+```bash
+pip install flask
+```
+<li>Then run the app:</li>
+<br>
+
+```bash
+python app.py
+```
