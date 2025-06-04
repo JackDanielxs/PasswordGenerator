@@ -1,4 +1,17 @@
-# ***Password generator***
+# ***🔐 Password Generator***
+
+A simple and secure password generator built to help users create strong, customizable passwords for improved security.
+
+## ***🚀 Features***
+<p align="left">
+  Generate random, secure passwords with:
+  <ul>
+    <li>Minimun number of characters</li>
+    <li>Uppercase letters</li>
+    <li>Lowercase letters</li>
+    <li>Special characters</li>
+  </ul>
+</p>
 
 ## ***🖥️ Languages & Tools used***
 
