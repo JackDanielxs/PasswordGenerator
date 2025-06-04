@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Toggle Switch -->
+  <div class="toggle-wrapper">
+    <label>
+        <span>Light Mode</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="darkToggle" onchange="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </label>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h1>Password Generator</h1>
+
+      <div class="output">
+        <input type="text" id="password" readonly>
+        <button onclick="generatePassword()">Generate</button>
+        <button onclick="copyPassword()" id="copyBtn" disabled>Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Made by <a href="https://github.com/JackDanielxs" target="_blank">JackDanielxs</a>
+  </footer>
+
+  <script>
+    function copyPassword() {
+        const passwordInput = document.getElementById('password');
+        if (!passwordInput.value) return;
+
+        navigator.clipboard.writeText(passwordInput.value).then(() => {
+        const btn = document.getElementById('copyBtn');
+        btn.textContent = 'Copied!';
+        btn.disabled = true;
+        setTimeout(() => {
+            btn.textContent = 'Copy';
+            btn.disabled = false;
+        }, 1500);
+        }).catch(() => { alert('Failed to copy password. Please copy manually.'); });
+    }
+
+    function generatePassword() {
+        fetch('/generate-password')
+            .then(response => response.json())
+            .then(data => {
+            const passwordInput = document.getElementById('password');
+            const copyBtn = document.getElementById('copyBtn');
+
+            passwordInput.value = data.password;
+            copyBtn.disabled = false;
+            copyBtn.textContent = 'Copy';
+        });
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>

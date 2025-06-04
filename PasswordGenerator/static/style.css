@@ -1,0 +1,180 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --input-bg: #1e1e1e;
+  --input-border: #444;
+  --button-bg: #1a73e8;
+  --button-hover: #0c4dab;
+}
+
+body.light {
+  --bg-color: #f4f4f4;
+  --text-color: #000;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+
+.toggle-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #1a73e8;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.card {
+  background: var(--input-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.output {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+input#password {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+button#copyBtn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: #28a745; /* green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+button#copyBtn:enabled {
+  opacity: 1;
+}
+
+button#copyBtn:hover:enabled {
+  background: #1e7e34;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+
