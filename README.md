@@ -6,9 +6,8 @@ A simple and secure password generator built to help users create strong passwor
 <p align="left">
   Generate random, secure passwords with:
   <ul>
-    <li>Minimun number of characters</li>
-    <li>Uppercase letters</li>
-    <li>Lowercase letters</li>
+    <li>Minimum number of characters</li>
+    <li>Uppercase and lowercase letters</li>
     <li>Special characters</li>
   </ul>
   And some commodities, like:
