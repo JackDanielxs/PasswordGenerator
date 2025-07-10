@@ -38,4 +38,4 @@ def get_password():
 
 # Run the application in debug mode when the script is executed directly
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
