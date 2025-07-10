@@ -36,6 +36,6 @@ def get_password():
     password = generate_password()
     return jsonify({'password': password})
 
-# Run the application in debug mode when the script is executed directly
+# Run the application when the script is executed directly
 if __name__ == '__main__':
     app.run()
