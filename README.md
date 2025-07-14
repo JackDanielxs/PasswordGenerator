@@ -16,8 +16,8 @@ And some commodities, like:
 ## ***🖥️ Languages & Tools used***
 
 <p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,flask,html,css,js" />
+  <a href="https://github.com/syvixor/skills-icons">
+    <img src="https://skills.syvixor.com/api/icons?i=python,flask,html,css,javascript" />
   </a>
 </p>
 
