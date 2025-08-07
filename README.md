@@ -13,7 +13,7 @@ And some commodities, like:
 - Dark/Light mode
 - Copy to clipboard
 
-## ***🖥️ Languages & Tools used***
+## ***🖥️ Technologies Used***
 
 <p align="left">
   <a href="https://github.com/syvixor/skills-icons">
