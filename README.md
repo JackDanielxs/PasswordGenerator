@@ -30,3 +30,6 @@ pip install flask
 ```bash
 python app.py
 ```
+
+---
+> 📁 You can check out another aproach [here](https://github.com/JackDanielxs/Scientific-Computing-with-Python/blob/main/Regular%20projects/password_generator.py)
